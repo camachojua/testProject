@@ -1,0 +1,21 @@
+* Example calls
+
+#+begin_src http :pretty
+  GET localhost:3000/first
+  Accept: application/json
+
+  {
+    "data": {
+      "param1": "Delicious",
+      "param2": "Cake"
+    }
+  }
+#+end_src
+
+#+RESULTS:
+: {
+:   "message": "Missing data on body",
+:   "missing": [
+:     "data"
+:   ]
+: }
